@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- layout_weight = 1 to the EditText that means the
+    EditText will take the full remaining width of your
+    Horizontal LinearLayout in which it drawn.
+    android:layout_weight="1"-->
+    <!-- android:ems or setEms(n) sets the width of a TextView
+    to fit a text of n 'M' letters regardless of the actual text
+    extension and text size. See wikipedia Em unit but only when
+    the layout_width is set to "wrap_content". Other layout_width
+    values override the ems width setting. Adding an
+    android:textSize attribute determines the physical width of
+    the view to the textSize * length of a text of n 'M's set
+    above. -->
+    <EditText
+        android:id="@+id/et_get_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    
+    <Button
+        android:id="@+id/b_set_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Time"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/b_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"/>
+
+    <Button
+        android:id="@+id/b_stop_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"/>
+
+</LinearLayout>
